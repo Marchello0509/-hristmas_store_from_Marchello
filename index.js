@@ -9,7 +9,7 @@ const htmlEl = {
 }
 
 htmlEl.btnCont1.addEventListener('click', () => {
-    htmlEl.inpGift.value
+    const InpGift = htmlEl.inpGift.value
     Continue()
     htmlEl.block.innerHTML = `
     <div id="content2" class="main_block_content2">
@@ -61,12 +61,6 @@ htmlEl.btnCont1.addEventListener('click', () => {
     ` 
     let btnCont2 = document.querySelectorAll('#btnCont2')
     console.log(btnCont2)
-    let checkboxes = document.querySelectorAll('input[type="checkbox"]');
-    checkboxes.forEach(checkbox => {
-        checkbox.addEventListener('change', () => {
-            console.log(checkbox.id)
-        })
-    }) 
     btnCont2.forEach(btn => {
         btn.addEventListener('click', () => {
             let content2 = document.querySelectorAll('#content2')
@@ -99,10 +93,11 @@ htmlEl.btnCont1.addEventListener('click', () => {
             `
             let btnCont3 = document.querySelectorAll('#btnCont3')
             console.log(btnCont3)
-            let inpWish = document.querySelectorAll('#inpWish')
-            inpWish.value
             btnCont3.forEach(btn2 => {
                 btn2.addEventListener('click', () => {
+                    let inpWish = document.querySelector('#inpWish')
+                    console.log(inpWish)
+                    const inp = inpWish.value
                     htmlEl.block.innerHTML = `
                     <div class="main_block_content4">
                     <div class="main_block_content4_logo">
@@ -119,23 +114,24 @@ htmlEl.btnCont1.addEventListener('click', () => {
                             <p class="main_block_content4_forb_b_p">Here is your gift, should you continue?</p>
                             <div class="main_block_content4_forb_b_forp2">
                                 <p class="main_block_content4_forb_b_forp2_p">Gift:</p>
-                                <p class="main_block_content4_forb_b_forp2_p2">${htmlEl.inpGift}</p>
+                                <p class="main_block_content4_forb_b_forp2_p2">${InpGift}</p>
                             </div>
                             <div class="main_block_content4_forb_b_forp3">
                                 <p class="main_block_content4_forb_b_forp3_p">Box size:</p>
-                                <p class="main_block_content4_forb_b_forp3_p2">${checkboxes}</p>
+                                <p id="boxSizeDisplay" class="main_block_content4_forb_b_forp3_p2"></p>
                             </div>
                             <div class="main_block_content4_forb_b_forp4">
                                 <p class="main_block_content4_forb_b_forp4_p">Your wishes:</p>
-                                <p class="main_block_content4_forb_b_forp4_p2">${inpWish}</p>
+                                <p class="main_block_content4_forb_b_forp4_p2">${inp}</p>
                             </div>
                         </div>
                     </div>
                     <div class="main_block_content4_forbtn">
                         <button id="btnCont1" class="main_block_content4_forbtn_btn">Continue</button>
                     </div> 
-                </div>
+                    </div>
                     `
+                    
                 })
             })
         })
