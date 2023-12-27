@@ -11,8 +11,7 @@ const clearContent = () => {
 }
 
 export const Continue = () => {
-    modalEl.inpGift.value
-
     modalEl.block.classList.toggle('expanded')
     setTimeout(clearContent, 500)
 }
+

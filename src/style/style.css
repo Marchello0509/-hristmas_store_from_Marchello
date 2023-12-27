@@ -12,7 +12,7 @@ body {
 }
 .main_block {
   width: 350px;
-  height: 243px;
+  height: 300px;
   border-radius: 5px;
   background: #000;
   transition: height 0.5s, opacity 0.5s;
@@ -105,6 +105,15 @@ body {
   transition-duration: 0.6s;
   background: #12A921;
   color: #FFF;
+}
+.main_block_content2 {
+  padding: 20px;
+  transition: opacity 0.5s;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.main_block_content2.expanded #content2 {
+  opacity: 0;
 }
 .main_block_content2_logo {
   display: flex;
@@ -259,6 +268,219 @@ body {
   transition-duration: 0.6s;
 }
 .main_block_content2_forbtn_btn:hover {
+  transition-duration: 0.6s;
+  background: #12A921;
+  color: #FFF;
+}
+.main_block_content3.expanded #content2 {
+  opacity: 0;
+}
+.main_block_content3_logo {
+  display: flex;
+  width: 207px;
+  height: 44px;
+  margin-top: 11px;
+  margin-left: 11px;
+}
+.main_block_content3_logo_forp {
+  margin-left: 5px;
+}
+.main_block_content3_logo_forp_p1 {
+  color: #FFF;
+  font-family: Overpass Mono;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.main_block_content3_logo_forp_p2 {
+  color: #FFF;
+  font-family: Overpass Mono;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+}
+.main_block_content3_forinput {
+  display: flex;
+  justify-content: center;
+}
+.main_block_content3_forinput_blinp {
+  margin-top: 40px;
+  width: 279px;
+  height: 40px;
+}
+.main_block_content3_forinput_blinp_p {
+  color: #FFF;
+  font-family: Overpass Mono;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.main_block_content3_forinput_blinp_input {
+  margin-top: 2px;
+  width: 278px;
+  height: 50px;
+  border-radius: 2px;
+  background: #FFF;
+  border: none;
+  outline: none;
+  font-family: Overpass Mono;
+}
+.main_block_content3_forbtn {
+  display: flex;
+  justify-content: center;
+}
+.main_block_content3_forbtn_btn {
+  margin-top: 50px;
+  width: 278px;
+  height: 31px;
+  border-radius: 2px;
+  background: #aeaeae;
+  color: #000000;
+  font-family: Overpass Mono;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+  border: none;
+  transition-duration: 0.6s;
+}
+.main_block_content3_forbtn_btn:hover {
+  transition-duration: 0.6s;
+  background: #12A921;
+  color: #FFF;
+}
+.main_block_content4.expanded #content3 {
+  opacity: 0;
+}
+.main_block_content4_logo {
+  display: flex;
+  width: 207px;
+  height: 44px;
+  margin-top: 11px;
+  margin-left: 11px;
+}
+.main_block_content4_logo_forp {
+  margin-left: 5px;
+}
+.main_block_content4_logo_forp_p1 {
+  color: #FFF;
+  font-family: Overpass Mono;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.main_block_content4_logo_forp_p2 {
+  color: #FFF;
+  font-family: Overpass Mono;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+}
+.main_block_content4_forb {
+  display: flex;
+  justify-content: center;
+}
+.main_block_content4_forb_b {
+  width: 313px;
+  height: 173px;
+  margin-top: 10px;
+}
+.main_block_content4_forb_b_p {
+  color: #FFF;
+  font-family: Overpass Mono;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.main_block_content4_forb_b_forp2 {
+  display: flex;
+  margin-top: 14px;
+}
+.main_block_content4_forb_b_forp2_p {
+  color: #FFF;
+  font-family: Overpass Mono;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.main_block_content4_forb_b_forp2_p2 {
+  color: #FFF;
+  font-family: Overpass Mono;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 5px;
+}
+.main_block_content4_forb_b_forp3 {
+  display: flex;
+  margin-top: 14px;
+}
+.main_block_content4_forb_b_forp3_p {
+  color: #FFF;
+  font-family: Overpass Mono;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.main_block_content4_forb_b_forp3_p2 {
+  color: #FFF;
+  font-family: Overpass Mono;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 5px;
+}
+.main_block_content4_forb_b_forp4 {
+  display: flex;
+  margin-top: 14px;
+}
+.main_block_content4_forb_b_forp4_p {
+  color: #FFF;
+  font-family: Overpass Mono;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.main_block_content4_forb_b_forp4_p2 {
+  color: #FFF;
+  font-family: Overpass Mono;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 5px;
+}
+.main_block_content4_forbtn {
+  display: flex;
+  justify-content: center;
+}
+.main_block_content4_forbtn_btn {
+  margin-top: 10px;
+  width: 278px;
+  height: 31px;
+  border-radius: 2px;
+  background: #aeaeae;
+  color: #000000;
+  font-family: Overpass Mono;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+  border: none;
+  transition-duration: 0.6s;
+}
+.main_block_content4_forbtn_btn:hover {
   transition-duration: 0.6s;
   background: #12A921;
   color: #FFF;
