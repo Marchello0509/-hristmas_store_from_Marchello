@@ -61,6 +61,21 @@ htmlEl.btnCont1.addEventListener('click', () => {
     ` 
     let btnCont2 = document.querySelectorAll('#btnCont2')
     console.log(btnCont2)
+    let input1 = document.querySelector("#Small")
+    let input2 = document.querySelector("#Medium")
+    let input3 = document.querySelector("#Big") 
+    input1.addEventListener('click', () => {
+        let small = input1.id
+        console.log(small)
+    })
+    input2.addEventListener('click', () => {
+        let medium = input2.id
+        console.log(medium)
+    })
+    input3.addEventListener('click', () => {
+        let big = input3.id
+        console.log(big)
+    })
     btnCont2.forEach(btn => {
         btn.addEventListener('click', () => {
             let content2 = document.querySelectorAll('#content2')
@@ -98,6 +113,16 @@ htmlEl.btnCont1.addEventListener('click', () => {
                     let inpWish = document.querySelector('#inpWish')
                     console.log(inpWish)
                     const inp = inpWish.value
+                    let boxSize
+                    if (input1.checked) {
+                        boxSize = 'Small'
+                    } else if (input2.checked) {
+                        boxSize = 'Medium'
+                    } else if (input3.checked) {
+                        boxSize = 'Big'
+                    } else {
+                        boxSize = 'Not chosen'
+                    }
                     htmlEl.block.innerHTML = `
                     <div class="main_block_content4">
                     <div class="main_block_content4_logo">
@@ -118,7 +143,7 @@ htmlEl.btnCont1.addEventListener('click', () => {
                             </div>
                             <div class="main_block_content4_forb_b_forp3">
                                 <p class="main_block_content4_forb_b_forp3_p">Box size:</p>
-                                <p id="boxSizeDisplay" class="main_block_content4_forb_b_forp3_p2"></p>
+                                <p id="bSize" class="main_block_content4_forb_b_forp3_p2">${boxSize}</p>
                             </div>
                             <div class="main_block_content4_forb_b_forp4">
                                 <p class="main_block_content4_forb_b_forp4_p">Your wishes:</p>
@@ -127,11 +152,10 @@ htmlEl.btnCont1.addEventListener('click', () => {
                         </div>
                     </div>
                     <div class="main_block_content4_forbtn">
-                        <button id="btnCont1" class="main_block_content4_forbtn_btn">Continue</button>
+                        <button id="btnCont4" class="main_block_content4_forbtn_btn">Continue</button>
                     </div> 
                     </div>
                     `
-                    
                 })
             })
         })
